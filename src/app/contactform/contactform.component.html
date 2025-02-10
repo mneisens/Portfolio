@@ -1,0 +1,98 @@
+<section id="contact">
+    <div class="headline">
+      <div class="headline__line"></div>
+      <h1 class="headline__text">{{'CONTACT' | translate}}</h1>
+      <div></div>
+    </div>    
+      <div class="contact-content">
+        <div class="left-contact">
+            <h2>{{'PROBLEM' | translate}}</h2>
+            <p>{{'CONTACT_ME_FORM' | translate}}
+            </p>
+            <p>{{'NEED_A_FRONTEND' | translate}}</p>
+        </div>
+    
+        <div class="form-container">
+          <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" id="contactForm" novalidate>
+            <div class="form-group">
+              <div class="input-wrapper">
+                <input [(ngModel)]="contactData.name" #name="ngModel" type="text" id="name" name="name" placeholder="{{'INPUT_NAME' | translate}}" required
+                  [ngClass]="{
+                    'input-error': name.invalid && name.touched,
+                    'input-success': name.valid && name.touched
+                  }"
+                />
+                <span class="status-icon" [ngClass]="{
+                    'icon-error': name.invalid && name.touched,
+                    'icon-success': name.valid && name.touched
+                  }"
+                ></span>
+              </div>
+              <small class="error-msg" *ngIf="name.invalid && name.touched">
+                {{'INPUT_NAME_ERROR' | translate}}
+              </small>
+            </div>
+            <div class="form-group">
+              <div class="input-wrapper">
+                <input [(ngModel)]="contactData.email" #email="ngModel" type="email" id="email" name="email" placeholder="{{'INPUT_MAIL' | translate}}" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                  [ngClass]="{
+                    'input-error': email.invalid && email.touched,
+                    'input-success': email.valid && email.touched
+                  }"
+                />
+                <span
+                  class="status-icon"
+                  [ngClass]="{
+                    'icon-error': email.invalid && email.touched,
+                    'icon-success': email.valid && email.touched
+                  }"
+                ></span>
+              </div>
+
+              <small class="error-msg" *ngIf="email.invalid && email.touched">
+                {{'INPUT_MAIL_ERROR' | translate}}
+              </small>
+            </div>
+    
+            <div class="form-group">
+              <div class="input-wrapper">
+                 <textarea [(ngModel)]="contactData.message" #message="ngModel" id="message" name="message" rows="5" placeholder="{{'INPUT_MESSAGE' | translate}}" required minlength="4"
+                  [ngClass]="{
+                    'input-error': message.invalid && message.touched,
+                    'input-success': message.valid && message.touched
+                  }"
+                ></textarea>
+                 <span class="status-icon"
+                  [ngClass]="{
+                    'icon-error': message.invalid && message.touched,
+                    'icon-success': message.valid && message.touched
+                  }"
+                ></span>
+              </div>
+              <small class="error-msg" *ngIf="message.invalid && message.touched">
+                {{'INPUT_MESSAGE_ERROR' | translate}}
+              </small>
+            </div>
+              <div class="form-group checkbox-group">
+              <input type="checkbox" id="policy" name="policy" [(ngModel)]="contactData.policy" required #policy="ngModel"/>
+              <label for="policy">
+              {{'I_HAVE_READ' | translate}} <a href="privacy-policy">{{'PRIVACY_POLIZY' | translate}}</a> {{'PRIVACY_POLIZY_END' | translate}}.
+              </label>
+            </div>
+
+            <button 
+            type="submit" 
+            [ngClass]="{'btn-submit': true, 'btn-submit--valid': contactForm?.form?.valid}">{{'SEND_MESSAGE' | translate}} :)</button>
+          </form>
+          <div *ngIf="showSuccessMessage" class="success-message">
+            {{ 'FORM_SUCCESS_MESSAGE' | translate }}
+          </div>
+        </div>
+        <div class="btn-up">
+          <a href="#above-the-fold">
+            <img src="/assets/img/Contact/up_button.png"  alt="">
+          </a>
+          
+        </div>
+      </div>
+    </section>

@@ -1,0 +1,43 @@
+<div class="above-the-fold" id="above-the-fold">
+    <div>        
+        <div class="main-container">           
+                <div class="profile-container">
+                    <img class="profil" src="./assets/img/Profilbild/profilbild.png" alt="">
+        
+                </div>               
+            <div class="profil-description-container">
+                <div class="profil-description-text">
+                    <div [ngClass]="{'small-text': currentLang === 'de', 'large-text': currentLang !== 'en'}" class="Iam">
+                        {{ 'IAM' | translate }}
+                    </div>
+                    <div class="job-name">
+                        <div class="profil-name">Michael Neisens</div> 
+                        <div class="profil-job">FRONTEND DEVELOPER</div>
+                    </div>        
+                </div>
+                <button (click)="scrollToSection('contact')" class="btn-gn">{{'LETS_TALK' | translate}}!</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="social-btns">
+        <div class="divider"></div>
+        <a target="_blank" href="https://github.com/mneisens">
+            <img class="git-btn" src="./assets/img/Social_buttons/git.svg" alt="Git Hub">
+        </a>
+        <a target="_blank" href="#" onclick="window.location.href='mailto:contact@michael-neisens.de'; return false;">
+            <img class="mail-btn" src="/assets/img/Social_buttons/Mail.svg" alt="Mail">
+        </a>
+        <a target="_blank" href="https://de.linkedin.com">
+            <img class="linkedIn-btn" src="./assets/img/Social_buttons/linkedIn.svg" alt="LinkedIn">
+        </a>
+        <a class="mail-adress" href="#contact">contact&#64;michael-neisens.de</a>
+        <div class="scroll-down">{{'SCROLL' | translate}} -></div>
+    </div>    
+
+</div>
+
+
+<div class="hero-background">
+    <img src="./assets/img/Background/28. Hero Background.png" alt="">
+</div>

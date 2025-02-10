@@ -1,0 +1,64 @@
+<div class="my-skills" id="my-skills">
+    <div [ngClass]="{'headline-de': currentLang === 'de', 'headline-en': currentLang !== 'de'}" >
+        <h1  >{{'MY_SKILLS' | translate}}</h1>
+        <div class="divider"></div>
+    </div>
+
+    
+
+
+
+    <div class="icons">
+        <div class="icon">
+            <img src="./assets/img/Skills/Frontend/png/html_4.png" alt="">
+            <p>HTML</p>
+        </div>
+        <div class="icon">
+            <img src="./assets/img/Skills/Frontend/png/css_3.png" alt="">
+            <p>CSS</p>
+        </div>
+        <div class="icon">
+            <img src="./assets/img/Skills/Frontend/png/JavScript_8.png" alt="">
+            <p>Java Script</p>
+        </div>
+        <div class="icon">
+            <img src="./assets/img/Skills/Frontend/png/Typescript_7.png" alt="">
+            <p>Type Script</p>
+        </div>
+        <div class="icon">
+            <img src="./assets/img/Skills/Frontend/png/Angular_9.png" alt="">
+            <p>Angular</p>
+        </div>
+        <div class="icon">
+            <img src="./assets/img/Skills/Frontend/png/Firebase_8.png" alt="">
+            <p>Firebase</p>
+        </div>
+        <div class="icon">
+            <img src="./assets/img/Skills/Frontend/png/git_2.png" alt="">
+            <p>Git</p>
+        </div>
+        <div class="icon">
+            <img src="./assets/img/Skills/Frontend/png/ReactVue_1.png" alt="">
+            <p>Rest API</p>
+        </div><div class="icon">
+            <img src="./assets/img/Skills/Frontend/png/Scrum_6.png" alt="">
+            <p>Scrum</p>
+        </div><div class="icon">
+            <img src="./assets/img/Skills/Frontend/png/Material Design_10.png" alt="">
+            <p>Material Design</p>
+        </div><div class="icon">
+            <img src="./assets/img/Skills/Frontend/png/Continually learning_11.png" alt="">
+            <p>Continually learning</p>
+        </div>
+    </div>
+    <div class="description">
+        <div [ngClass]="{'headline-bottom-de': currentLang === 'de', 'headline-bottom-en': currentLang !== 'de'}">
+            <h1>{{'MY_SKILLS' | translate}}</h1>
+            <div class="divider"></div>
+        </div>
+        <p>{{'EXPERIENCE' | translate}}</p>
+        <h2>{{'LOOKING_FOR' | translate}} <span>{{'ANOTHER_SKILL' | translate}}</span>?</h2>
+        <p>{{'CONTACT_ME' | translate}}</p> 
+            <button class="btn-gn" [ngClass]="{'btn-contact-de': currentLang === 'de', 'btn-contact-en': currentLang !== 'de'}"> <a href="#contact">{{'BTN_CONTACT_ME' | translate}}</a> </button>       
+    </div>
+</div>

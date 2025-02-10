@@ -1,0 +1,241 @@
+.portfolio{
+    max-width: 1440px;
+    width: 100vw;
+    margin-top: 180px;
+    box-sizing: border-box;
+    position: relative; 
+    background: url('/assets/img/Background/32 Purple shadow portfolio.svg') no-repeat -200px 1300px;
+    background-size: contain;
+    background-size: 600px;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-sizing: border-box;
+}
+
+#portfolio{
+    scroll-margin-top: 100px;
+    scroll-behavior: smooth;
+}
+
+.headline {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;       
+    width: 100%;              
+   
+  }
+  
+  .headline-line-left {
+    width: 20%;              
+    height: 2px;
+    background-color: #8a2be2;
+    margin-right: 50px;
+    justify-self: end;
+   
+  }
+  
+  .headline-text {
+    font-size: 90px;
+    font-weight: 700;               
+    text-align: center;       
+    margin: 0;
+  }
+  
+  .headline-line-right {
+    width: 100%;              
+    height: 2px;
+    background-color: #8a2be2;
+    margin-left: 50px;
+  }
+  
+
+.divider-left{
+    border: 2px solid rgba(151, 71, 255, 1);
+    width: 100px;
+}
+
+.divider-right{
+    border: 2px solid rgba(151, 71, 255, 1);
+    max-width: 500px;
+    width: 100%;
+}
+
+.portfolio-description{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 90px;
+    @media (max-width:1400px) {
+       text-align: center;
+    }
+    p{
+        font-size: 16px;
+        font-family: 'Poppins thin';
+    }
+}
+
+.one-portfolio {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 80px;
+    
+    &.reverse {
+      flex-direction: row-reverse; 
+    }
+  }
+
+.portfolio-img-top{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.portfolio-img-bottom{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+
+.project-description{
+    h2{
+        font-size: 32px;
+        font-weight: 700;
+        color: rgba(151, 71, 255, 1);
+        margin-bottom: 15px;
+    }
+    h3{
+        font-size: 23px;
+        font-family: 'Poppins thin';
+        color: rgba(112, 230, 28, 1);
+    }
+    width: 50%;
+    box-sizing: border-box;
+}
+
+
+.btn-live-test{
+    background-color: rgba(151, 71, 255, 1);
+    border: none;
+    border-radius: 10px;
+    width: 152px;
+    height: 58px;
+    margin-right: 10px;
+    font-size: 23px;
+    color: white;
+    font-family: 'Poppins thin';
+    cursor: pointer;
+    &:hover{
+        background-color: rgba(112, 230, 28, 1);
+    }
+}
+
+.btn-github{
+    border: 1px solid rgba(112, 230, 28, 1);
+    border-radius: 10px;
+    width: 137px;
+    height: 58px;
+    background-color: rgba(20, 29, 47, 1);
+    color: white;
+    font-size: 23px;
+    font-family: 'Poppins thin';
+    cursor: pointer;
+    &:hover{
+        background-color: rgba(112, 230, 28, 1);
+    }
+}
+
+@media (max-width: 1250px) {
+    .portfolio-img{
+      img{
+        width: 400px;
+      }
+    }
+    .portfolio{
+    background: url('/assets/img/Background/32 Purple shadow portfolio.svg') no-repeat -400px 800px;
+    background-size: 600px;
+
+    }
+}
+
+@media (max-width: 1050px) {
+  .one-portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+
+    &.reverse{
+      flex-direction: column;
+    }
+  }
+
+  .project-description{
+    width: 100%;
+    text-align: center;
+  }
+
+  .headline{
+    h1{
+    font-size: 70px;   
+    }
+    .headline-line-right{
+      width: 100%;
+    }
+    .headline-line-left{
+      text-align: right;
+    }
+    
+  }   
+}
+
+
+@media (max-width: 500px) {
+  .portfolio{
+    padding: 0;
+    margin-top: 100px;
+  }
+  .headline{
+    h1{
+    font-size: 45px;   
+    }
+    .headline-line-right{
+      width: 100%;
+    }
+    .headline-line-left{
+      text-align: right;
+    }
+    
+  }   
+
+  .portfolio-img{
+    img{
+      width: 100%
+    }
+  }
+
+  .project-description{
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-sizing: border-box;
+    text-align: center;
+    h2{
+      font-size: 32px;
+    }
+    h3{
+      font-size: 23px;
+    }
+    .btn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

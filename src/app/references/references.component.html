@@ -1,0 +1,29 @@
+<div class="references">
+    <div class="show-content">
+        <div class="text-box">
+            <div class="text">
+                {{reviews[currentIndex].text | translate}}
+            </div>
+            <div class="creator">
+                <div class="divider-box"></div>
+                <div class="creator-name">{{reviews[currentIndex].author}}</div>
+            </div>
+        </div>
+        <div class="img-reference">
+            <div></div>
+            <img src="{{reviews[currentIndex].img}}" alt="">
+            <div class="divider-img"></div>
+        </div>
+    </div>
+    <div class="next-reference">
+        <img src="./assets/img/References/arrow_back.png" (click)="prevReview()" alt="">
+        <!-- <div class="elipse-gn"></div>
+        <div class="elipse-purple"></div>
+        <div class="elipse-purple"></div> -->
+        <div *ngFor="let review of reviews; let i = index">
+            <div [ngClass]="i === currentIndex ? 'elipse-gn' : 'elipse-purple'"></div>
+        </div>
+
+        <img src="./assets/img/References/arrow_forward.png" (click)="nextReview()" alt="">
+    </div>
+</div>

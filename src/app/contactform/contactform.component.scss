@@ -1,0 +1,246 @@
+.headline {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;       
+    width: 100%;              
+    div{
+      width: 100%;
+    }
+  }
+  
+.headline__line {
+  width: 100%;              
+  height: 2px;
+  background-color: #8a2be2;
+  margin-right: 50px;
+}
+  
+.headline__text {
+  font-size: 90px;
+  font-weight: 700;               
+  text-align: center;       
+  margin: 0;
+}
+  
+  .form-container {
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+.form-group {
+  margin-bottom: 20px;
+}
+    
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+    
+ 
+.input-wrapper {
+  position: relative;      
+}
+    
+.status-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  font-size: 1.2rem;
+  pointer-events: none; 
+}
+    
+.error-msg {
+  color: #f44;   
+  font-size: 0.9rem;
+  margin-top: 4px;
+  display: block;
+}
+    
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  background-color: #1B1E32;      
+  border: 2px solid #9747FF;    
+  border-radius: 8px;
+  padding: 12px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+::placeholder {
+  color: #bbb;
+}
+    
+
+.checkbox-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+    
+.checkbox-group input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  accent-color: #70e61c; 
+}
+    
+.checkbox-group a {
+  color: #9747FF;
+  text-decoration: none;
+}
+    
+.checkbox-group a:hover {
+  text-decoration: underline;
+}
+    
+.btn-submit {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 20px;
+  background-color: #888;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+    
+.btn-submit:hover {
+  background-color: #aaa;
+}
+    
+.input-error {
+  border-color: #f44 !important; 
+  background: url('/assets/img/Contact/warning.png') no-repeat right top;
+  background-position: 95% center;
+}
+      
+.input-success {
+  border-color: #70e61c !important; 
+  background: url('/assets/img/Contact/check-mark.png') no-repeat right top;
+  background-position: 95% center;
+}
+
+.contact-content{
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+}
+  
+.left-contact{
+  width: 50%;
+}
+
+.headline{
+  display: flex;
+  justify-content: center;
+}
+
+section{
+  width: 1440px;
+  position: relative;
+  background: url('/assets/img/Background/33. Purple shadow Footer.svg') no-repeat -200px 200px;
+  background-size: contain;
+  padding-left: 100px;
+  padding-right: 100px;
+  box-sizing: border-box;
+}
+
+.success-message{
+  color: #70e61c;   
+  font-size: 24px;
+  margin-top: 4px;
+  display: block;
+  margin-top: 24px;
+  border: 2px solid #9747FF;  
+  border-radius: 10px;
+}
+
+.btn-up{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+
+.btn-submit {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 20px;
+  background-color: #888;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s;
+}
+  
+.btn-submit:hover {
+  background-color: #aaa;
+}
+
+.btn-submit--valid {
+  background-color: #70e61c;
+}
+  
+.btn-submit--valid:hover {
+  background-color: #5fbf1a;
+}
+
+@media (max-width:1400px) {
+  .contact-content{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #contact{
+    width: 100%;
+  }
+}
+
+@media (max-width:1400px) {
+  .form-container{
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width:900px) {
+  .form-container{
+    width: 100%;
+  }
+  .left-contact{
+    width: 100%;
+  }
+  #contact{
+    padding: 0;
+  }
+}
+
+@media (max-width:900px) {
+  .headline__text{
+    font-size: 70px;
+  }
+}
+
+@media (max-width:400px) {
+  .headline__text{
+    font-size: 50px;
+  }
+}

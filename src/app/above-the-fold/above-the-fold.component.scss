@@ -1,0 +1,411 @@
+.divider{
+    width: 100px;
+    background-color: rgba(151, 71, 255, 1);
+    height: 2px;
+}
+
+.above-the-fold{
+ display: flex;
+ flex-direction: column;
+ height: calc(100vh - 100px);
+ width: 1440px;
+ height: 100%;
+ min-height: 100vh;
+ justify-content: space-between;
+}
+
+.profile-container {
+    position: relative; 
+    z-index: 0; 
+    img{
+        margin-top: 100px;
+    }
+  }
+
+.profil {
+    position: absolute;
+    top: 0;   
+    left: 0;
+    height: 500px;
+    z-index: 1;
+    background-image: url("/assets/img/Background/29. photo shadows.svg");
+    background-size: 100% auto;
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+
+}
+
+.social-btns{
+    gap: 32px;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    margin-bottom: 24px;
+    height: 50px;
+    img{
+        width: 30px;
+        &:hover{
+            width: 40px;
+        }
+    }
+}
+
+.mail-adress{
+    text-decoration: none;
+    color: white;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+
+
+.hero-background {
+        
+        width: 100%;
+        background-color: transparent;
+        z-index: 0;
+    
+        img {
+            position: absolute;
+            top: 200px;
+            left: 0;
+            width: 100%;
+            height: 767px;
+            display: inline-block;
+            background-color: transparent;
+        }
+  }
+
+  .small-text{
+    font-size: 50px!important;
+  }
+
+  .profil-description-container {
+    position: relative;
+    z-index: 4; 
+    
+  }
+
+.Iam{
+    transform: rotate(-90deg);
+    font-size: 64px;
+}
+
+
+.profil-name{
+    display: inline-block;             
+    text-align: center;       
+    margin: 0 auto;          
+    white-space: nowrap; 
+    font-size: 90px;
+    font-weight: 700;
+    letter-spacing: 0; 
+}
+
+
+.profil-job {
+    font-size: 58px;
+    letter-spacing: 0.1em;
+    color: rgba(151, 71, 255, 1);
+  }
+
+
+.profil-description-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   position: relative;
+}
+
+.profil-description-container{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-right: 100px;
+ margin-top: 200px;
+}
+
+.btn-gn{
+    cursor: pointer;
+    width: 165px;
+    height: 58px;
+    background: rgba(112, 230, 28, 1);
+    color: white;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: none;
+    font-size: 23px;
+    margin-top: 44px;
+    margin-bottom: 300px;
+    transition: transform 0.2s ease-in-out; 
+    &:hover{
+        width: 181px;
+        height: 81;
+        background-color: rgba(151, 71, 255, 1);
+        transform: scale(1.2);
+        transform-origin: top;      
+    }
+}
+
+.scroll-down{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: rotate(90deg);
+    font-size: 23px;
+}
+
+@media (max-width:1440px) {
+    .above-the-fold{
+        min-width: 100%;
+        width: 100vw;
+    }
+    .profil-description-container{
+        margin-left: 10px;
+    }
+    .profil-description-text{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .profil-name{
+        font-size: 60px;
+    }
+    .profil-job{
+        font-size: 40px;
+    }
+
+    .hero-background{
+        min-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+
+    .main-container{
+        max-width: 100%;
+    }
+
+    .scroll-down{
+        display: none;
+    }
+
+    .large-text{
+        font-size: 34px!important;
+    }
+
+   
+}
+
+@media (max-width:1200px) {
+    .main-container{
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-gn{
+        margin-bottom: 0;
+    }
+
+    .profil-description-container{
+        margin-top: 0;
+    }
+
+    .profile-container{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .above-the-fold{
+        min-width: 100%;
+    }
+
+    .shadow{
+        width: 100%;
+    }
+
+    .profil{
+        position: static;
+        width: 100%;
+    }
+
+    .social-btns{
+        justify-content: space-between;
+        // margin-right: 40px;
+        margin-top: 40px;
+        margin-right: 24px;
+    }
+
+    .Iam{
+        font-size:45px;
+    }
+    .hero-background{
+        img{
+            top: 430px;
+            height: 300px;
+        }
+    }
+}
+
+@media (max-width:750px) {
+    .Iam{
+        
+        font-size: 32px;
+        letter-spacing: 0.01em;
+    }
+
+    .profil-description-container{
+        margin: 0;
+    }
+
+    .profil-name{
+        font-size: 44px;
+        letter-spacing: 0.3em;        
+    }
+
+    .profil-job{
+        font-size: 28px;
+        letter-spacing: 0.5em;        
+
+    }
+    .small-text{
+        font-size: 25px!important;
+    }
+}
+
+
+@media (max-width:650px) {
+    .mail-adress{
+        display: none;
+    }   
+
+    .profil-name{
+        letter-spacing: 0.2em;
+    }
+
+    .profil-job{
+        letter-spacing: 0.37em;        
+    }
+    .hero-background{
+        img{
+            top: 420px;
+        }
+    }
+
+    .small-text{
+        font-size: 24px!important;
+    }
+}
+
+@media (max-width:573px) {
+
+    .Iam{
+        font-size: 28px;
+    }
+
+    .profil-name{
+        font-size: 28px;
+        letter-spacing: 0.28em;
+
+    }
+
+    .profil-job{
+        font-size: 24px;
+        letter-spacing: 0.2em;
+
+    }
+
+    .small-text{
+        font-size: 18px!important;
+    }
+ 
+}
+
+@media (max-width:531px) {
+    .hero-background{
+        img{
+            top: 460px;
+
+        }
+    }
+}
+@media (max-width:500px) {
+    .Iam{
+        font-size: 28px;
+    }
+
+    .profil-name{
+        font-size: 26px;
+        letter-spacing: 0.28em;
+
+    }
+
+    .profil-job{
+        font-size: 22px;
+        letter-spacing: 0.2em;
+
+    }
+    .small-text{
+        font-size: 16px!important;
+    }
+}
+
+@media (max-width:480px) {
+    .hero-background{
+        img{
+            top: 450px;
+        }
+    }
+    
+ 
+}
+
+
+@media (max-width:410px) {
+
+    .Iam{
+        font-size: 24px;
+    }
+
+    .profil-name{
+        font-size: 24px;
+        letter-spacing: 0.14em;
+
+    }
+
+    .profil-job{
+        font-size: 20px;
+        letter-spacing: 0.09em;
+
+    }
+
+    .small-text{
+        font-size: 14px!important;
+    }
+
+    .profil{
+        width: 450px;
+    }
+    
+}
+
+@media (max-width:375px) {
+    .profil-description-container{
+        margin: 0;
+    }
+
+    .profil{
+        display: flex;
+        justify-content: center;
+    }
+
+    .profil-description-text{
+        width: 100%;
+    }
+}

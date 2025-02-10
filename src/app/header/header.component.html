@@ -1,0 +1,32 @@
+<nav>
+    <div class="nav-content">
+        <h1 class="portfolio-name">
+            <a href="#above-the-fold">Michael</a>
+        </h1>
+        <div class="navbar-menu" [class.active]="menuOpen">
+            <div class="one-nav">
+                <a href="#about-me" (click)="closeMenu()">{{'ABOUTME'  | translate}}</a>
+                <div class="divider"></div>
+            </div>
+            <div class="one-nav">
+                <a href="#my-skills" (click)="closeMenu()">Skills</a>
+                <div class="divider"></div>
+            </div>
+            <div class="one-nav">
+                <a href="#portfolio" (click)="closeMenu()">Portfolio</a>
+                <div class="divider"></div>
+            </div>
+            <div class="one-nav d-none" >
+                <a href="#contact" (click)="closeMenu()">Contact</a>
+                <div class="divider"></div>
+            </div>
+        </div>
+        <div>
+            <button *ngIf="showFlag" class="german" (click)="changeLanguage('de')" (click)="toogleLanguage()"><img src="./assets/img/flags/usa.png" alt=""></button>
+            <button class="usa" *ngIf="!showFlag" (click)="changeLanguage('en')"(click)="toogleLanguage()"><img src="./assets/img/flags/german.png" alt=""></button>
+        </div>
+        <div class="nav-mobile" (click)="toggleMenu()">
+            <img src="./assets/img/General/nav.png" alt="">
+        </div>
+    </div>
+</nav>
