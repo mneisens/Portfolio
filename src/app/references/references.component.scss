@@ -3,6 +3,7 @@
     padding-left: 100px;
     padding-right: 100px;
     box-sizing: border-box;
+    position: relative;
 }
 
 .show-content{
@@ -50,7 +51,9 @@
     margin-top: 20px;
     gap: 20px;
     border: 2px solid transparent;
-    box-sizing: border-box;      
+    box-sizing: border-box;  
+    position: relative;
+    z-index: 100;
     img{
         border: 2px solid transparent;
         box-sizing: border-box;    
@@ -99,6 +102,14 @@
    
   }
 
+  .green-shadow{
+    position: absolute;
+    top: -400px;
+    right: -50vw;
+    background-color: transparent;
+    z-index: 1;
+}
+
   @media (max-width:1400px) {
     .references{
         width: 100vw;
@@ -128,9 +139,65 @@
     }
   }
 
-  @media (max-width:700px) {
-    .text-box{
-        padding: 20px;
+  @media (max-width:1200px) {
+    .green-shadow{
+        right: -50vw;
+        height: 800px;
+        top: 0px;
     }
 }
 
+@media (max-width:800px) {
+    .green-shadow{
+        right: -50vw;
+        height: 600px;
+    }
+}
+
+  @media (max-width:700px) {
+    .text-box{
+        padding: 20px;
+    }    
+}
+
+
+@media (max-width:600px) {
+    .green-shadow{
+        right: -30vw;
+        height: 400px;
+    } 
+}
+
+@media (max-width:440px) {
+    .green-shadow{
+        top: 400px;
+        right: -70vw;
+        height: 400px;
+    } 
+}
+
+@media (max-width:380px) {
+    .creator-name{
+        margin: 0px;
+    }
+   
+}
+
+@keyframes appear{
+    from {
+      opacity: 0;
+      transform: translateX(200px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+  }
+
+  .block{
+    animation: appear linear;
+    animation-timeline: view() ;
+    animation-range: entry 20% cover 40%;
+  }

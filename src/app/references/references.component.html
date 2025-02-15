@@ -1,4 +1,4 @@
-<div class="references">
+<div class="references block">
     <div class="show-content">
         <div class="text-box">
             <div class="text">
@@ -17,13 +17,15 @@
     </div>
     <div class="next-reference">
         <img src="./assets/img/References/arrow_back.png" (click)="prevReview()" alt="">
-        <!-- <div class="elipse-gn"></div>
-        <div class="elipse-purple"></div>
-        <div class="elipse-purple"></div> -->
         <div *ngFor="let review of reviews; let i = index">
             <div [ngClass]="i === currentIndex ? 'elipse-gn' : 'elipse-purple'"></div>
         </div>
 
         <img src="./assets/img/References/arrow_forward.png" (click)="nextReview()" alt="">
     </div>
+    <img class="green-shadow" src="./assets/img/Background/31. Green shadow Skills Portfolio.svg"alt="">
+
 </div>
+
+
+

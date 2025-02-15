@@ -4,9 +4,6 @@
     margin-top: 180px;
     box-sizing: border-box;
     position: relative; 
-    background: url('/assets/img/Background/32 Purple shadow portfolio.svg') no-repeat -200px 1300px;
-    background-size: contain;
-    background-size: 600px;
     padding-left: 100px;
     padding-right: 100px;
     box-sizing: border-box;
@@ -64,12 +61,15 @@
     text-align: center;
     margin-top: 40px;
     margin-bottom: 90px;
+ 
     @media (max-width:1400px) {
        text-align: center;
     }
     p{
         font-size: 16px;
         font-family: 'Poppins thin';
+        padding-right: 24px;
+        box-sizing: border-box;
     }
 }
 
@@ -150,6 +150,14 @@
     }
 }
 
+.purple-shadow{
+  position: absolute;
+  top: 2000px;
+  left: -600px;
+  background-color: transparent;
+  z-index: 1;
+}
+
 @media (max-width: 1250px) {
     .portfolio-img{
       img{
@@ -195,6 +203,26 @@
   }   
 }
 
+@media (max-width: 700px) {
+  .purple-shadow{
+
+    top: 2000px;
+    left: -600px;
+    height: 600px;
+  }
+  @keyframes appear{
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+  
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+  
+    }
+  }
+}
 
 @media (max-width: 500px) {
   .portfolio{
@@ -238,4 +266,22 @@
       justify-content: center;
     }
   }
+}
+@keyframes appear{
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+
+  }
+  to{
+      opacity: 1;
+      transform: translateX(0px);
+
+  }
+}
+
+.block{
+  animation: appear linear;
+  animation-timeline: view() ;
+  animation-range: entry 20% cover 40%;
 }

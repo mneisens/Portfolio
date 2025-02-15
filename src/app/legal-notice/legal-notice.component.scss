@@ -1,34 +1,115 @@
-section{
-    margin-top: 110px;
+
+section {
+
     display: flex;
     flex-direction: column;
-    max-width: 1440px;
+    width: 100%;
+    max-width: 100vw;
     height: 100%;
+    max-width: 1440px;
     justify-content: center;
     text-align: left;
     position: relative;
-    background: url("/assets/img/Background/30. Purple shadow about me.png") no-repeat top left ,
-                url("/assets/img/Background/31. Green shadow Skills Portfolio.svg") no-repeat top right,
-                url("/assets/img/Background/30. Purple shadow about me.png") no-repeat top left,
-                url("/assets/img/Background/32 Purple shadow portfolio.svg") no-repeat top right,
-                url("/assets/img/Background/31. Green shadow Skills Portfolio.svg") no-repeat top right;
-    background-position: -400px 0px, 1000px 1400px,-400px 5000px, 1000px 4000px, 1000px 6000px;
+    padding: 60px;
+    box-sizing: border-box;
+    position: relative;
+}
 
-    h1,h2{
-        color: rgba(112, 230, 28, 1);
+h1, h2 {
+    color: rgba(112, 230, 28, 1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+ul.index {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+ul.index li {
+    margin: 10px;
+}
+
+a, a:visited, a:active {
+    text-decoration: none !important;
+    color: purple;
+}
+
+
+
+a:hover {
+    cursor: pointer;
+    color: rgba(112, 230, 28, 1);
+}
+
+.shadow-purple{
+    position: absolute;
+    top: 400px;
+    left: -200px;
+    height: 400px;
+    background-color: transparent;
+    z-index: 10;
+}
+
+.shadow-green{
+    position: absolute;
+    top: 400px;
+    right: 0px;
+    height: 400px;
+    background-color: transparent;
+    z-index: 10;
+}
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 35px;
     }
 
-    h1{
-        text-align: center;
-        font-size: 70px;
+    ul.index {
+        flex-direction: column;
+        padding: 0;
     }
-    
-    a{
-        text-decoration: none;
-        color: white;
-        &:hover{
-            cursor: pointer;
-            color: rgba(112, 230, 28, 1);
-        }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    section {
+        padding-left: 16px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    ul.index li {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    ul.index li {
+        font-size: 12px;
     }
 }

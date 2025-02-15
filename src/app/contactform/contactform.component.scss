@@ -60,7 +60,12 @@
   margin-top: 4px;
   display: block;
 }
-    
+
+.form-container{
+  position: relative;
+  z-index: 100;
+}
+
 input[type="text"],
 input[type="email"],
 textarea {
@@ -150,10 +155,6 @@ textarea {
 section{
   width: 1440px;
   position: relative;
-  background: url('/assets/img/Background/33. Purple shadow Footer.svg') no-repeat -200px 200px;
-  background-size: contain;
-  padding-left: 100px;
-  padding-right: 100px;
   box-sizing: border-box;
 }
 
@@ -165,6 +166,8 @@ section{
   margin-top: 24px;
   border: 2px solid #9747FF;  
   border-radius: 10px;
+  padding: 12px;
+  box-sizing: border-box;
 }
 
 .btn-up{
@@ -202,6 +205,20 @@ section{
 .btn-submit--valid:hover {
   background-color: #5fbf1a;
 }
+.btn-submit:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.purple-shadow{
+  position: absolute;
+  top: 200px;
+  left: -40vw;
+  height: 700px;
+  background-color: transparent;
+  z-index: 1;
+}
 
 @media (max-width:1400px) {
   .contact-content{
@@ -212,6 +229,8 @@ section{
   #contact{
     width: 100%;
   }
+
+
 }
 
 @media (max-width:1400px) {
@@ -231,11 +250,19 @@ section{
   #contact{
     padding: 0;
   }
+
 }
 
 @media (max-width:900px) {
   .headline__text{
     font-size: 70px;
+  }
+  .purple-shadow{
+
+    top: 200px;
+    left: -40vw;
+    height: 500px;
+  
   }
 }
 
@@ -243,4 +270,23 @@ section{
   .headline__text{
     font-size: 50px;
   }
+}
+
+@keyframes appear{
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+
+  }
+  to{
+      opacity: 1;
+      transform: translateX(0px);
+
+  }
+} 
+
+.block{
+  animation: appear linear;
+  animation-timeline: view() ;
+  animation-range: entry 20% cover 40%;
 }

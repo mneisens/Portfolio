@@ -6,10 +6,7 @@ section{
     width: 1440px;
     height: 100vh;
     text-align: left;
-    position: relative;
-    background: url("/assets/img/Background/30. Purple shadow about me.png") no-repeat top left,
-                url("/assets/img/Background/30. Purple shadow about me.png") no-repeat top left;                
-     ;                
+    position: relative;          
     background-position: -400px 0px, 800px;
     text-align: center;
 
@@ -30,8 +27,29 @@ section{
             color: rgba(112, 230, 28, 1);
         }
     }
+
+    .impressum{
+        flex-wrap: wrap;
+    }
 }
 
+.shadow-purple{
+    position: absolute;
+    top: 400px;
+    left: -200px;
+    height: 400px;
+    background-color: transparent;
+    z-index: 10;
+}
+
+.shadow-green{
+    position: absolute;
+    top: 400px;
+    right: 0px;
+    height: 400px;
+    background-color: transparent;
+    z-index: 10;
+}
 @media (max-width:470px) {
     section{
         h1{

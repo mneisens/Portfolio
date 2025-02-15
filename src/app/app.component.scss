@@ -1,6 +1,4 @@
 .wrapper {
-
-    // overflow-y: auto;
     margin: 0 auto;       
     display: flex;
     justify-content: center;
@@ -12,19 +10,21 @@
     padding: 0;
     box-sizing: border-box;
     width: 100vw;
+
   }
 
-  .shadow-skill-portfolio{
-    position: relative; 
-    background: url('/assets/img/Background/31. Green shadow Skills Portfolio.svg') no-repeat -500px 500px;
-    background-size: contain;
-    background-size: 800px;
-    
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
-
-  .shadow-above-aboutme{
-    position: relative;
-    background: url('/assets/img/Background/30. Purple shadow about me.svg') no-repeat 1300px 1100px ;
-    background-size: contain;
-    background-size: 600px;
+  
+  .animate {
+    opacity: 1 !important;
+    animation: fadeInUp 0.8s ease-out forwards;
   }

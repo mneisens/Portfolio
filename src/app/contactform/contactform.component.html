@@ -1,4 +1,4 @@
-<section id="contact">
+<section class="block" id="contact">
     <div class="headline">
       <div class="headline__line"></div>
       <h1 class="headline__text">{{'CONTACT' | translate}}</h1>
@@ -82,6 +82,7 @@
 
             <button 
             type="submit" 
+            [disabled]="!contactForm?.form?.valid"
             [ngClass]="{'btn-submit': true, 'btn-submit--valid': contactForm?.form?.valid}">{{'SEND_MESSAGE' | translate}} :)</button>
           </form>
           <div *ngIf="showSuccessMessage" class="success-message">
@@ -95,4 +96,7 @@
           
         </div>
       </div>
+    <img class="purple-shadow" src="./assets/img/Background/33. Purple shadow Footer.svg" alt="">
+
     </section>
+

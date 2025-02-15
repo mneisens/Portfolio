@@ -7,10 +7,9 @@
 .above-the-fold{
  display: flex;
  flex-direction: column;
- height: calc(100vh - 100px);
+ height: calc(100vh - 110px);
  width: 1440px;
- height: 100%;
- min-height: 100vh;
+ max-height: 100vh;
  justify-content: space-between;
 }
 
@@ -28,7 +27,6 @@
     left: 0;
     height: 500px;
     z-index: 1;
-    background-image: url("/assets/img/Background/29. photo shadows.svg");
     background-size: 100% auto;
 }
 
@@ -45,8 +43,9 @@
     display: flex;
     align-items: center;
     z-index: 100;
-    margin-bottom: 24px;
+    padding-bottom: 100px;
     height: 50px;
+    box-sizing: border-box;
     img{
         width: 30px;
         &:hover{
@@ -66,7 +65,6 @@
 
 
 .hero-background {
-        
         width: 100%;
         background-color: transparent;
         z-index: 0;
@@ -156,7 +154,7 @@
 .scroll-down{
     position: absolute;
     right: 10px;
-    top: 50%;
+    top: 40%;
     transform: rotate(90deg);
     font-size: 23px;
 }
@@ -233,11 +231,11 @@
     .profil{
         position: static;
         width: 100%;
+        margin-top: 0!important;
     }
 
     .social-btns{
         justify-content: space-between;
-        // margin-right: 40px;
         margin-top: 40px;
         margin-right: 24px;
     }
@@ -247,7 +245,7 @@
     }
     .hero-background{
         img{
-            top: 430px;
+            top: 390px;
             height: 300px;
         }
     }
@@ -277,6 +275,9 @@
     .small-text{
         font-size: 25px!important;
     }
+    .social-btns{
+        padding: 0;
+    }
 }
 
 
@@ -292,11 +293,7 @@
     .profil-job{
         letter-spacing: 0.37em;        
     }
-    .hero-background{
-        img{
-            top: 420px;
-        }
-    }
+  
 
     .small-text{
         font-size: 24px!important;
@@ -330,7 +327,7 @@
 @media (max-width:531px) {
     .hero-background{
         img{
-            top: 460px;
+            top: 380px;
 
         }
     }
@@ -355,17 +352,6 @@
         font-size: 16px!important;
     }
 }
-
-@media (max-width:480px) {
-    .hero-background{
-        img{
-            top: 450px;
-        }
-    }
-    
- 
-}
-
 
 @media (max-width:410px) {
 

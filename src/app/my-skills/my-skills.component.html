@@ -1,12 +1,8 @@
-<div class="my-skills" id="my-skills">
+<div  class="my-skills block" id="my-skills">
     <div [ngClass]="{'headline-de': currentLang === 'de', 'headline-en': currentLang !== 'de'}" >
         <h1  >{{'MY_SKILLS' | translate}}</h1>
         <div class="divider"></div>
-    </div>
-
-    
-
-
+    </div>  
 
     <div class="icons">
         <div class="icon">
@@ -61,4 +57,6 @@
         <p>{{'CONTACT_ME' | translate}}</p> 
             <button class="btn-gn" [ngClass]="{'btn-contact-de': currentLang === 'de', 'btn-contact-en': currentLang !== 'de'}"> <a href="#contact">{{'BTN_CONTACT_ME' | translate}}</a> </button>       
     </div>
+<img class="green-shadow" src="/assets/img/Background/31. Green shadow Skills Portfolio.svg" alt="">
+
 </div>

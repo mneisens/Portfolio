@@ -2,7 +2,7 @@
     <div class="border">
         <div class="left-side">
             <span>Michael</span>
-            <a class="legal-notice" href="imprint" >{{'LEGAL_NOTICE' | translate}}</a>
+            <a class="legal-notice" [routerLink]="['/imprint']" routerLinkActive="router-link-active">{{'LEGAL_NOTICE' | translate}}</a>
         </div>
         <div class="copyright">
             <span> &copy; Michael Neisens 2025</span>
@@ -18,7 +18,7 @@
                 <img class="linkedIn-btn" src="./assets/img/Social_buttons/linkedIn.svg" alt="LinkedIn">
             </a>
         </div>
-        <a class="leagal-notice-bottom" href="imprint">{{'LEGAL_NOTICE' | translate}}</a>
+        <a class="leagal-notice-bottom" [routerLink]="['/imprint']" routerLinkActive="router-link-active">{{'LEGAL_NOTICE' | translate}}</a>
     </div>
 </section>
 
