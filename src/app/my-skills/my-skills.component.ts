@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, OnInit,AfterViewInit,Inject, PLATFORM_ID,HostListener  } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import * as AOS from 'aos';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-my-skills',
@@ -10,7 +11,7 @@ import * as AOS from 'aos';
   templateUrl: './my-skills.component.html',
   styleUrls: ['./my-skills.component.scss']
 })
-export class MySkillsComponent  { 
+export class MySkillsComponent { 
   currentLang: string;
 
   constructor(private translateService: TranslateService) {
@@ -20,6 +21,21 @@ export class MySkillsComponent  {
       this.currentLang = event.lang;
     });
   }
-
-
+ 
+  // ngAfterViewInit() {
+  //   if (isPlatformBrowser(this.platformId)) {
+  //     console.log("AOS wird nur im Browser geladen...");
+  //     import('aos').then((AOS) => {
+  //       console.log("AOS geladen:", AOS); // Debug-Log
+  //       AOS.init({
+  //         duration: 1000,
+  //         once: false
+  //       });
+  //       AOS.refresh();
+  //     });
+  //   }
+  // }
+  
 }
+
+

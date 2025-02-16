@@ -32,7 +32,7 @@
     "INPUT_MAIL_ERROR": "Your email is required",    
     "INPUT_MESSAGE": "Your message",
     "INPUT_MESSAGE_ERROR": " Your message must be at least 4 characters",
-    "I_HAVE_READ": "I’ve read the",
+    "I_HAVE_READ": "I ve read the",
     "PRIVACY_POLIZY": "privacy policy",
     "PRIVACY_POLIZY_END": "and agree to the processing of my data.",
     "SEND_MESSAGE": "Send message",
@@ -45,7 +45,7 @@
     "CONTACTI": "Contact:",
     "PHONE": "Telephone",
     "EMAIL": "E-mail",
-    "CREDITS": "Imprint generated with the <a href='https://www.impressum-generator.de'>Impressum Generator</a> by <a href='https://www.kanzlei-hasselbach.de/standorte/bonn/' rel='nofollow'>Kanzlei Hasselbach, Bonn</a>",
+    "CREDITS": "Imprint generated with the <a></a> by <a href='https://www.kanzlei-hasselbach.de/standorte/bonn/' rel='nofollow'></a>",
    
       "PRIVACY": {
         "TITLE": "Privacy Policy",
@@ -123,7 +123,7 @@
         },
         "INTERNATIONAL_TRANSFERS": {
           "TITLE": "International Data Transfers",
-          "DESCRIPTION": "Data processing in third countries: If we process data in a third country (i.e., outside the European Union (EU) or the European Economic Area (EEA)) or if processing takes place as part of the use of services provided by third parties or the disclosure or transfer of data to other persons, entities, or companies, this is done in accordance with legal requirements. If the data protection level in the third country is recognized as adequate (Art. 45 GDPR), that decision serves as the basis for the transfer. Otherwise, transfers take place only if the data protection level is secured by other means, in particular through standard contractual clauses (Art. 46 para. 2 lit. c GDPR), explicit consent, or where transfer is required by contract or law (Art. 49 para. 1 GDPR). Furthermore, we inform you about the legal basis for transfers to third countries for the individual providers, with adequacy decisions taking precedence. More information on third-country transfers and adequacy decisions can be found on the EU Commission's website: <a href=\"https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection_en?prefLang=de\" target=\"_blank\">https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection_en?prefLang=de.</a> Under the “Data Privacy Framework” (DPF), the EU Commission has also recognized the data protection level as adequate for certain companies from the USA as of July 10, 2023. The list of certified companies and further information on the DPF can be found on the website of the U.S. Department of Commerce at <a href=\"https://www.dataprivacyframework.gov/\" target=\"_blank\">https://www.dataprivacyframework.gov/</a> (in English). We will inform you in our privacy notices which service providers are certified under the Data Privacy Framework."
+          "DESCRIPTION": "Data processing in third countries: If we process data in a third country (i.e., outside the European Union (EU) or the European Economic Area (EEA)) or if processing takes place as part of the use of services provided by third parties or the disclosure or transfer of data to other persons, entities, or companies, this is done in accordance with legal requirements. If the data protection level in the third country is recognized as adequate (Art. 45 GDPR), that decision serves as the basis for the transfer. Otherwise, transfers take place only if the data protection level is secured by other means, in particular through standard contractual clauses (Art. 46 para. 2 lit. c GDPR), explicit consent, or where transfer is required by contract or law (Art. 49 para. 1 GDPR). Furthermore, we inform you about the legal basis for transfers to third countries for the individual providers, with adequacy decisions taking precedence. More information on third-country transfers and adequacy decisions can be found on the EU Commission's website: <a></a> Under the “Data Privacy Framework” (DPF), the EU Commission has also recognized the data protection level as adequate for certain companies from the USA as of July 10, 2023. The list of certified companies and further information on the DPF can be found on the website of the U.S. Department of Commerce at <a></a> (in English). We will inform you in our privacy notices which service providers are certified under the Data Privacy Framework."
         },
         "STORAGE": {
           "TITLE": "General Information on Data Storage and Deletion",
@@ -200,7 +200,7 @@
           "ADDITIONAL": "<strong>Further information on processing activities, procedures, and services:</strong>",
           "CONTACT_FORM": "<strong>Contact Form:</strong> When you contact us via our contact form, email, or other communication channels, we process the personal data you provide to answer and handle your inquiry. This typically includes information such as your name, contact details, and any additional information you provide that is necessary to process your request. We use this data solely for handling your inquiry and communication; <span class=\"\"><strong>Legal Bases:</strong> Contract fulfillment and pre-contractual inquiries (Art. 6 para. 1 sentence 1 lit. b GDPR), Legitimate interests (Art. 6 para. 1 sentence 1 lit. f GDPR).</span>"
         },
-        "SEAL": "<a href=\"https://datenschutz-generator.de/\" title=\"Privacy policy generated by Dr. Schwenke - click for more information.\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Generated with free Privacy Policy Generator by Dr. Thomas Schwenke</a>"
+        "SEAL": "<a/a>"
       }
     
     

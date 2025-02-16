@@ -1,6 +1,6 @@
 .portfolio{
     max-width: 1440px;
-    width: 100vw;
+    // width: 100%;
     margin-top: 180px;
     box-sizing: border-box;
     position: relative; 
@@ -10,7 +10,7 @@
 }
 
 #portfolio{
-    scroll-margin-top: 100px;
+    scroll-margin-top: 200px;
     scroll-behavior: smooth;
 }
 
@@ -152,7 +152,7 @@
 
 .purple-shadow{
   position: absolute;
-  top: 2000px;
+  top: 4000px;
   left: -600px;
   background-color: transparent;
   z-index: 1;
@@ -183,6 +183,8 @@
       flex-direction: column;
     }
   }
+
+
 
   .project-description{
     width: 100%;
@@ -226,7 +228,6 @@
 
 @media (max-width: 500px) {
   .portfolio{
-    padding: 0;
     margin-top: 100px;
   }
   .headline{
@@ -267,6 +268,7 @@
     }
   }
 }
+
 @keyframes appear{
   from {
     opacity: 0;

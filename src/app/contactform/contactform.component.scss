@@ -7,6 +7,10 @@
       width: 100%;
     }
   }
+
+  #contact{
+    scroll-margin-top: 200px;
+  }
   
 .headline__line {
   width: 100%;              
@@ -242,10 +246,10 @@ section{
 
 @media (max-width:900px) {
   .form-container{
-    width: 100%;
+    width: 80%;
   }
   .left-contact{
-    width: 100%;
+    width: 80%;
   }
   #contact{
     padding: 0;
@@ -266,10 +270,21 @@ section{
   }
 }
 
+@media (max-width:450px) {
+
+  .form-container{
+    width: 60%;
+  }
+  .left-contact{
+    width: 60%;
+  }
+}
+
 @media (max-width:400px) {
   .headline__text{
     font-size: 50px;
   }
+
 }
 
 @keyframes appear{

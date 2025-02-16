@@ -1,6 +1,5 @@
 import { Component,Directive, ElementRef, Renderer2, OnInit,AfterViewInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import * as AOS from 'aos';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({

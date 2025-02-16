@@ -17,8 +17,8 @@ nav {
     align-items: center;
     height: 110px;
     width: 1440px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 16px;
+    padding-right: 16px;
     box-sizing: border-box;
 }
 
@@ -38,6 +38,7 @@ nav {
     gap: 29px;
     margin-left: auto; 
     margin-right: 16px;
+
 }
 
 .navbar-menu a {
@@ -94,7 +95,7 @@ nav {
         backdrop-filter: blur(10px);
         flex-direction: column;
         text-align: center;
-        padding: 20px 0;
+        padding: 40px 0;
         transition: all 0.3s ease-in-out;
     }
 

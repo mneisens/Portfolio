@@ -1,42 +1,40 @@
 section{
-    margin-top: 110px;
     display: flex;
     flex-direction: column;
-    max-width: 1440px;
-    width: 1440px;
-    height: 100vh;
-    text-align: left;
     position: relative;          
-    background-position: -400px 0px, 800px;
     text-align: center;
+    height: 100%!important;
+}   
 
-    h1,h2{
+h1,h2{
+    color: rgba(112, 230, 28, 1);
+    margin-top: 0;
+}
+
+h1{
+    text-align: center;
+    font-size: 70px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    &:hover{
+        cursor: pointer;
         color: rgba(112, 230, 28, 1);
     }
+}
 
-    h1{
-        text-align: center;
-        font-size: 70px;
-    }
-    
-    a{
-        text-decoration: none;
-        color: white;
-        &:hover{
-            cursor: pointer;
-            color: rgba(112, 230, 28, 1);
-        }
-    }
-
-    .impressum{
-        flex-wrap: wrap;
-    }
+.impressum{
+    flex-wrap: wrap;
+    z-index: 100;
+    position: relative;
 }
 
 .shadow-purple{
     position: absolute;
-    top: 400px;
-    left: -200px;
+    top: 0px;
+    left: -30vw;
     height: 400px;
     background-color: transparent;
     z-index: 10;
@@ -44,16 +42,36 @@ section{
 
 .shadow-green{
     position: absolute;
-    top: 400px;
-    right: 0px;
+    top: 300px;
+    right: -35vw;
     height: 400px;
     background-color: transparent;
     z-index: 10;
 }
+
+@media (max-width:540px) {
+    .shadow-purple{      
+        left: -45vw;
+        height: 400px;
+    }
+    
+    .shadow-green{
+        top: 0;
+        right: -80vw;
+        height: 400px;
+    }
+}
+
 @media (max-width:470px) {
     section{
         h1{
             font-size: 50px;
         }
     }
+    .shadow-purple{
+        left: -60vw;
+        height: 400px;
+      
+    }
+    
 }

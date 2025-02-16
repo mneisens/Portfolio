@@ -1,7 +1,7 @@
 *{
     position: relative;
     font-family: 'Poppins';
-    max-width: 100vw;
+    // max-width: 100vw;
 }
 
 .headline-en{
@@ -42,13 +42,14 @@
 
 .my-skills{
     margin-top: 124px;
-    width: 1440px;
+    // width: 1440px;
     display: flex;
     justify-content: space-between;
     z-index: 30;
     padding-right: 100px;
     box-sizing: border-box;
     position: relative;     
+    max-width: 1440px;
 }
 
 
@@ -59,8 +60,8 @@
 
 
 #my-skills{
-    scroll-margin-top: 100px;
     scroll-behavior: smooth;
+    scroll-margin-top: 250px; 
 }
 
 .icons{
@@ -77,6 +78,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    min-height: 120px;
     img{
         width: 60px;
         &:hover{
@@ -85,7 +87,10 @@
     }
 
     p{
-        max-width: 60px;
+        // max-width: 60px;
+        min-height: 60px; /* Passe den Wert ggf. an deine Schriftgröße an */
+        margin: 10px 0 0 0; /* Oberer Abstand, um Abstand zum Icon zu halten */
+        text-align: center;
     }
 
     
@@ -215,7 +220,7 @@
         h1{
             font-size: 90px;
         }        
-}
+    }
 
     .headline-bottom-en{
         display: none;
@@ -243,7 +248,7 @@
     }
 
     .description {     
-        max-width: 100%;
+        max-width: 100vw;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -262,6 +267,10 @@
         margin: 0;
         width: 80%;
         justify-content: center;
+        padding-left: 30px;
+        padding-right: 30px;
+        box-sizing: border-box;
+        max-width: 100vw;
     }
     .green-shadow{
         left: -40vw;
@@ -280,12 +289,12 @@
 @media (max-width:600px) {
     .icon{
         img{
-            width: 40px;
+            // width: 40px;
             gap: 60px;
         }
     }
     .icons{
-        width: 100%;
+        max-width: 100%;
     }
 }
 @media (max-width:880px) {
@@ -303,7 +312,7 @@
     .green-shadow{
         top: 150px;
         left: -40vw;
-        height: 600px;
+        // height: 600px;
     }
 }
 
@@ -318,6 +327,16 @@
         h1{
             font-size: 36px;
         }
+    }
+
+    .icon{
+        img{
+            width: 50px;
+            gap: 40px;
+        }
+    }
+    .icons{
+        gap: 50px;
     }
 
 }
@@ -338,15 +357,14 @@
 
     .icons{
         margin: 0;
-        width: 100%;
-        gap: 60px;
+        // gap: 60px;
         justify-content: center;
         font-size: 14px;
     }
 
-    .icon{
-        width: 48px;
-    }
+    // .icon{
+    //     width: 24px;
+    // }
     .description{
         p{
             margin-top: 32px;
@@ -363,3 +381,8 @@
     
 }
 
+// [data-aos] {
+//     opacity: 1 !important;
+//     visibility: visible !important;
+//     transform: none !important;
+//   }

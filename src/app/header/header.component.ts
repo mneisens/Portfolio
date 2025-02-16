@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -23,6 +24,9 @@ export class HeaderComponent {
  */
 toggleMenu() {
   this.menuOpen = !this.menuOpen;
+}
+scrollTo(section: string) {
+  document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
 }
 
  /**
@@ -59,4 +63,5 @@ showFlag: boolean =true;
 toogleLanguage(){
   this.showFlag = !this.showFlag;
 }
+
 }

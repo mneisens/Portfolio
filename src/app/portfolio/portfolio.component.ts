@@ -1,7 +1,7 @@
 import { CommonModule, NgFor } from '@angular/common';
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import AOS from 'aos';
+
 
 
 @Component({
@@ -11,7 +11,7 @@ import AOS from 'aos';
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })
-export class PortfolioComponent implements OnInit, AfterViewInit{
+export class PortfolioComponent{
   projects = [
     {
       title: 'Join',
@@ -48,15 +48,5 @@ export class PortfolioComponent implements OnInit, AfterViewInit{
     }
   }
 
-  ngOnInit() {      
-    AOS.init();
-      window.addEventListener('load', AOS.refresh)
 
-;}
-
-ngAfterViewInit() {
-setTimeout(() => {
-AOS.refresh(); 
-}, 500);
-}
 }
