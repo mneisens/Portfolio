@@ -26,15 +26,12 @@ export class AppComponent {
 
   ngAfterViewInit() {
     if (isPlatformBrowser(this.platformId)) {
-      console.log("AOS wird nur im Browser geladen...");
       import('aos').then((AOS) => {
-        console.log("AOS geladen:", AOS); // Debug-Log
         AOS.init({
           duration: 1000,
       easing: 'ease-in-out',
       once: false,
       offset : 200,
-      // startEvent: 'load',
         });
         AOS.refresh();
       });
@@ -44,6 +41,4 @@ export class AppComponent {
     }, 500);
     
   }
-
-  
 }

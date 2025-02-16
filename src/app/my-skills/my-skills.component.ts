@@ -20,22 +20,7 @@ export class MySkillsComponent {
     this.translateService.onLangChange.subscribe(event => {
       this.currentLang = event.lang;
     });
-  }
- 
-  // ngAfterViewInit() {
-  //   if (isPlatformBrowser(this.platformId)) {
-  //     console.log("AOS wird nur im Browser geladen...");
-  //     import('aos').then((AOS) => {
-  //       console.log("AOS geladen:", AOS); // Debug-Log
-  //       AOS.init({
-  //         duration: 1000,
-  //         once: false
-  //       });
-  //       AOS.refresh();
-  //     });
-  //   }
-  // }
-  
+  }  
 }
 
 

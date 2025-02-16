@@ -54,24 +54,11 @@
     font-family: 'Poppins', sans-serif;
     color: white;
     height: 100vh; 
-    // max-width: 100%;
-    // overflow-x: hidden; /* Hide vertical scrollbar */
-    // overflow-x: hidden;
-    // overflow-y: hidden;
-    // max-width: 90vw;
-    // width: calc(100vw - (100vw - 100%))!important;
     width: 100%;
     scroll-behavior: smooth;
     overflow-x: clip;
     margin: 0;
-    // padding-right: calc(100vw - 100%); 
-    // box-sizing: border-box;
-    // background: url('/assets/img/Background/32 Purple shadow portfolio.svg') no-repeat -1400px 100px;   
-    // overflow: visible !important;
-    // max-width: 800px;
   }
-
-  
   
   *, *::before, *::after {
     box-sizing: border-box;
