@@ -11,6 +11,7 @@
  justify-content: space-between;
  position: relative;
  z-index: 10;
+ height: calc(100vh - 110px);
 }
 
 .profile-container {
@@ -42,7 +43,6 @@
     display: flex;
     align-items: center;
     z-index: 100;
-    padding-bottom: 200px;
     height: 50px;
     box-sizing: border-box;
     img{
@@ -153,7 +153,7 @@
 .scroll-down{
     position: absolute;
     right: 10px;
-    top: 40%;
+    top: 70%;
     transform: rotate(90deg);
     font-size: 23px;
 }
@@ -390,4 +390,67 @@
     .profil-description-text{
         width: 100%;
     }
+}
+
+@media (max-height:870px) and (max-width:1440px) {
+    .profil{
+        
+        height: 400px;
+        width: auto;        
+    
+    }
+    .hero-background{
+        img{
+            top: 280px;
+        }
+    }
+
+}
+
+@media (max-height:770px) {
+    .profil{
+        height: 280px;
+        width: auto;
+    }
+    .hero-background{
+        img{
+            top: 170px;
+        }
+    }
+    
+}
+
+@media (max-height:650px) {
+    .profil{
+        height: 220px;
+        width: auto;
+    }
+    .hero-background{
+        img{
+            top: 100px;
+        }
+    }
+    
+}
+@media (max-height:590px) {
+    .profil{
+        height: 200px;
+        width: auto;
+    }
+    .hero-background{
+        img{
+            top: 90px;
+        }
+    }    
+}
+@media (max-height:560px) {
+    .profil{
+        height: 180px;
+        width: auto;
+    }
+    .hero-background{
+        img{
+            top: 70px;
+        }
+    }    
 }

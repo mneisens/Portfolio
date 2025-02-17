@@ -8,7 +8,6 @@
     display: flex;
     justify-content: center;
     max-width: 1440px;
-    margin-left: 100px;
     box-sizing: border-box;
 }
 
@@ -21,12 +20,11 @@ h1{
     font-family: 'Poppins';
     font-weight: 700;
     font-size: 90px;
-    margin-top: 100px;
+
 }
 
 .description{
     display: flex;
-    // width: 100%;
     gap: 16px;
     margin-bottom: 24px;
     img{
@@ -79,6 +77,12 @@ h1{
     right: -40vw;
     background-color: transparent;
     z-index: 10;
+}
+
+@media (max-width:1500px) {
+    .about-me{
+        margin-left: 100px;
+    }
 }
 
 @media (max-width:1400px) {

@@ -8,6 +8,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactformComponent } from './contactform/contactform.component';
 import { NgModule } from '@angular/core';
 
+
 export const routes: Routes = [
     { path: 'imprint', component: ImprintComponent },
     { path: 'privacy-policy', component: LegalNoticeComponent },

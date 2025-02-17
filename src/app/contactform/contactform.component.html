@@ -76,7 +76,7 @@
               <div class="form-group checkbox-group">
               <input type="checkbox" id="policy" name="policy" [(ngModel)]="contactData.policy" required #policy="ngModel"/>
               <label for="policy">
-              {{'I_HAVE_READ' | translate}} <a href="privacy-policy">{{'PRIVACY_POLIZY' | translate}}</a> {{'PRIVACY_POLIZY_END' | translate}}.
+              {{'I_HAVE_READ' | translate}} <a [routerLink]="['/privacy-policy']" routerLinkActive="router-link-active"  >{{'PRIVACY_POLIZY' | translate}}</a> {{'PRIVACY_POLIZY_END' | translate}}.
               </label>
             </div>
 
