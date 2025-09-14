@@ -6,7 +6,7 @@ import { provideClientHydration } from '@angular/platform-browser';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {TranslateModule, TranslateLoader} from "@ngx-translate/core";
 import {HttpClient} from '@angular/common/http';
-import {provideHttpClient} from "@angular/common/http";
+import {provideHttpClient, withFetch} from "@angular/common/http";
 
 
 
@@ -17,7 +17,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 export const appConfig: ApplicationConfig = {
   providers: [provideRouter(routes), provideClientHydration(),
     provideZoneChangeDetection({ eventCoalescing: true }),
-    provideHttpClient(),
+    provideHttpClient(withFetch()),
     importProvidersFrom([TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

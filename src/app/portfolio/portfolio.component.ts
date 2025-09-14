@@ -32,13 +32,13 @@ export class PortfolioComponent{
       githubLink: 'https://github.com/mneisens/EL-Pollo-Loco'
     },
     {
-      title: 'Pokédex',
-      techStack: 'JavaScript | HTML | CSS | API',
-      translateKey: 'POKEDEX',
-      image: '/assets/img/Portfolio/Pokedex.png',
+      title: 'Coderr',
+      techStack: 'DRF | Python | Django',
+      translateKey: 'CODERR',
+      image: '/assets/img/Portfolio/Coderr.png',
       imageBottom: '', 
-      liveLink: 'https://www.michael-neisens.de/Pokedex/index.html',
-      githubLink: 'https://github.com/mneisens/Pokedex'
+      liveLink: 'https://michael-neisens.de/Coderr/index.html',
+      githubLink: 'https://github.com/mneisens/Coderr_Backend'
     }
   ];
 
