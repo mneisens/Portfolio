@@ -65,7 +65,7 @@
        text-align: center;
     }
     p{
-        font-size: 16px;
+        font-size: 20px;
         font-family: 'Poppins thin';
         padding-right: 24px;
         box-sizing: border-box;
@@ -102,6 +102,9 @@
   
 
 .project-description{
+    p{
+        font-size: 18px;
+    }
     h2{
         font-size: 32px;
         font-weight: 700;

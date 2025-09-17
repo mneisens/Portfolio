@@ -9,6 +9,7 @@
     justify-content: center;
     max-width: 1440px;
     box-sizing: border-box;
+    margin-top: 100px;
 }
 
 #about-me{
@@ -35,7 +36,7 @@ h1{
     }
 
     p,div{
-        font-size: 16px;
+        font-size: 20px;
     }
 }
 
@@ -45,6 +46,10 @@ h1{
 }
 .about-me-left{
     width: 50%;
+} .profil{
+    position: static;
+    width: 100%;
+    margin-top: 0!important;
 }
 .about-me-right{
     position: relative;
